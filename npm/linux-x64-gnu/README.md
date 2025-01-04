@@ -1,3 +1,3 @@
-# `@napi-rs/package-template-linux-x64-gnu`
+# `@roblox-integrations/roblox-install-linux-x64-gnu`
 
-This is the **x86_64-unknown-linux-gnu** binary for `@napi-rs/package-template`
+This is the **x86_64-unknown-linux-gnu** binary for `@roblox-integrations/roblox-install`

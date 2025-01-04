@@ -1,3 +1,3 @@
-# `@napi-rs/package-template-win32-ia32-msvc`
+# `@roblox-integrations/roblox-install-win32-ia32-msvc`
 
-This is the **i686-pc-windows-msvc** binary for `@napi-rs/package-template`
+This is the **i686-pc-windows-msvc** binary for `@roblox-integrations/roblox-install`
