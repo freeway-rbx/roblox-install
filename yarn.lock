@@ -61,26 +61,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@napi-rs/package-template@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "@napi-rs/package-template@workspace:."
-  dependencies:
-    "@napi-rs/cli": "npm:^2.18.4"
-    "@swc-node/register": "npm:^1.10.6"
-    "@swc/core": "npm:^1.6.13"
-    "@taplo/cli": "npm:^0.7.0"
-    ava: "npm:^6.1.3"
-    chalk: "npm:^5.3.0"
-    husky: "npm:^9.0.11"
-    lint-staged: "npm:^15.2.7"
-    npm-run-all2: "npm:^7.0.0"
-    oxlint: "npm:^0.15.0"
-    prettier: "npm:^3.3.3"
-    tinybench: "npm:^3.0.0"
-    typescript: "npm:^5.5.3"
-  languageName: unknown
-  linkType: soft
-
 "@napi-rs/wasm-runtime@npm:^0.2.4":
   version: 0.2.4
   resolution: "@napi-rs/wasm-runtime@npm:0.2.4"
@@ -246,6 +226,26 @@ __metadata:
   conditions: os=win32 & cpu=x64
   languageName: node
   linkType: hard
+
+"@roblox-integrations/roblox-install@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "@roblox-integrations/roblox-install@workspace:."
+  dependencies:
+    "@napi-rs/cli": "npm:^2.18.4"
+    "@swc-node/register": "npm:^1.10.6"
+    "@swc/core": "npm:^1.6.13"
+    "@taplo/cli": "npm:^0.7.0"
+    ava: "npm:^6.1.3"
+    chalk: "npm:^5.3.0"
+    husky: "npm:^9.0.11"
+    lint-staged: "npm:^15.2.7"
+    npm-run-all2: "npm:^7.0.0"
+    oxlint: "npm:^0.15.0"
+    prettier: "npm:^3.3.3"
+    tinybench: "npm:^3.0.0"
+    typescript: "npm:^5.5.3"
+  languageName: unknown
+  linkType: soft
 
 "@rollup/pluginutils@npm:^4.0.0":
   version: 4.2.1
