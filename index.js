@@ -287,3 +287,7 @@ if (!nativeBinding) {
 const { plus100 } = nativeBinding
 
 module.exports.plus100 = plus100
+const { studioPluginsPath, studioContentPath } = nativeBinding
+
+module.exports.studioPluginsPath = studioPluginsPath
+module.exports.studioContentPath = studioContentPath

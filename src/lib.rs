@@ -1,6 +1,8 @@
 #![deny(clippy::all)]
 
 use napi_derive::napi;
+#[macro_use]
+extern crate napi_derive;
 
 use roblox_install::RobloxStudio;
 
