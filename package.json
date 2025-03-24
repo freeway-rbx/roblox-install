@@ -3,7 +3,7 @@
   "version": "0.0.13",
   "description": "Get Roblox Studio install directory. A nodejs wrapper for https://github.com/Kampfkarren/roblox-install",
   "main": "index.js",
-  "repository": "git@github.com:roblox-integrations/roblox-install.git",
+  "repository": "git@github.com:freeway-rbx/roblox-install.git",
   "license": "MIT",
   "keywords": [
     "napi-rs",
