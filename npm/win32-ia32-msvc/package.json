@@ -1,6 +1,6 @@
 {
   "name": "@roblox-integrations/roblox-install-win32-ia32-msvc",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "os": [
     "win32"
   ],
