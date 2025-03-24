@@ -1,6 +1,6 @@
 {
   "name": "@roblox-integrations/roblox-install-android-arm64",
-  "version": "0.0.10",
+  "version": "0.0.13",
   "os": [
     "android"
   ],
