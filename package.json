@@ -1,6 +1,6 @@
 {
   "name": "@roblox-integrations/roblox-install",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "Get Roblox Studio install directory. A nodejs wrapper for https://github.com/Kampfkarren/roblox-install",
   "main": "index.js",
   "repository": "git@github.com:roblox-integrations/roblox-install.git",
