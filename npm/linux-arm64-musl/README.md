@@ -1,3 +1,3 @@
-# `@roblox-integrations/roblox-install-linux-arm64-musl`
+# `@freeway-rbx/roblox-install-linux-arm64-musl`
 
-This is the **aarch64-unknown-linux-musl** binary for `@roblox-integrations/roblox-install`
+This is the **aarch64-unknown-linux-musl** binary for `@freeway-rbx/roblox-install`

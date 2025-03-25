@@ -1,5 +1,5 @@
 {
-  "name": "@roblox-integrations/roblox-install-darwin-arm64",
+  "name": "@freeway-rbx/roblox-install-darwin-arm64",
   "version": "0.0.22",
   "os": [
     "darwin"
@@ -28,5 +28,5 @@
     "registry": "https://registry.npmjs.org/",
     "access": "public"
   },
-  "repository": "https://github.com/roblox-integrations/roblox-install/"
+  "repository": "https://github.com/freeway-rbx/roblox-install/"
 }

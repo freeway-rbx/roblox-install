@@ -1,3 +1,3 @@
-# `@roblox-integrations/roblox-install-darwin-arm64`
+# `@freeway-rbx/roblox-install-darwin-arm64`
 
-This is the **aarch64-apple-darwin** binary for `@roblox-integrations/roblox-install`
+This is the **aarch64-apple-darwin** binary for `@freeway-rbx/roblox-install`

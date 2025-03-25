@@ -1,5 +1,5 @@
 {
-  "name": "@roblox-integrations/roblox-install-linux-arm64-musl",
+  "name": "@freeway-rbx/roblox-install-linux-arm64-musl",
   "version": "0.0.22",
   "os": [
     "linux"
@@ -28,7 +28,7 @@
     "registry": "https://registry.npmjs.org/",
     "access": "public"
   },
-  "repository": "https://github.com/roblox-integrations/roblox-install/",
+  "repository": "https://github.com/freeway-rbx/roblox-install/",
   "libc": [
     "musl"
   ]

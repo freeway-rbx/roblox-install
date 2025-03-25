@@ -1,3 +1,3 @@
-# `@roblox-integrations/roblox-install-win32-arm64-msvc`
+# `@freeway-rbx/roblox-install-win32-arm64-msvc`
 
-This is the **aarch64-pc-windows-msvc** binary for `@roblox-integrations/roblox-install`
+This is the **aarch64-pc-windows-msvc** binary for `@freeway-rbx/roblox-install`
