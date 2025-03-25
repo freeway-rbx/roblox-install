@@ -418,6 +418,7 @@ jobs:
         run: |
           ls -la /home/runner/work/roblox-install/roblox-install/npm/
           ls -la /home/runner/work/roblox-install/roblox-install/npm/darwin-arm64/
+          cat /home/runner/work/roblox-install/roblox-install/npm/darwin-arm64/package.json
       - name: Move artifacts
         run: yarn artifacts
       - name: List packages
