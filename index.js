@@ -37,7 +37,7 @@ switch (platform) {
           if (localFileExisted) {
             nativeBinding = require('./roblox-install.android-arm64.node')
           } else {
-            nativeBinding = require('@roblox-integrations/roblox-install-android-arm64')
+            nativeBinding = require('@freeway-rbx/roblox-install-android-arm64')
           }
         } catch (e) {
           loadError = e
@@ -49,7 +49,7 @@ switch (platform) {
           if (localFileExisted) {
             nativeBinding = require('./roblox-install.android-arm-eabi.node')
           } else {
-            nativeBinding = require('@roblox-integrations/roblox-install-android-arm-eabi')
+            nativeBinding = require('@freeway-rbx/roblox-install-android-arm-eabi')
           }
         } catch (e) {
           loadError = e
@@ -62,42 +62,36 @@ switch (platform) {
   case 'win32':
     switch (arch) {
       case 'x64':
-        localFileExisted = existsSync(
-          join(__dirname, 'roblox-install.win32-x64-msvc.node')
-        )
+        localFileExisted = existsSync(join(__dirname, 'roblox-install.win32-x64-msvc.node'))
         try {
           if (localFileExisted) {
             nativeBinding = require('./roblox-install.win32-x64-msvc.node')
           } else {
-            nativeBinding = require('@roblox-integrations/roblox-install-win32-x64-msvc')
+            nativeBinding = require('@freeway-rbx/roblox-install-win32-x64-msvc')
           }
         } catch (e) {
           loadError = e
         }
         break
       case 'ia32':
-        localFileExisted = existsSync(
-          join(__dirname, 'roblox-install.win32-ia32-msvc.node')
-        )
+        localFileExisted = existsSync(join(__dirname, 'roblox-install.win32-ia32-msvc.node'))
         try {
           if (localFileExisted) {
             nativeBinding = require('./roblox-install.win32-ia32-msvc.node')
           } else {
-            nativeBinding = require('@roblox-integrations/roblox-install-win32-ia32-msvc')
+            nativeBinding = require('@freeway-rbx/roblox-install-win32-ia32-msvc')
           }
         } catch (e) {
           loadError = e
         }
         break
       case 'arm64':
-        localFileExisted = existsSync(
-          join(__dirname, 'roblox-install.win32-arm64-msvc.node')
-        )
+        localFileExisted = existsSync(join(__dirname, 'roblox-install.win32-arm64-msvc.node'))
         try {
           if (localFileExisted) {
             nativeBinding = require('./roblox-install.win32-arm64-msvc.node')
           } else {
-            nativeBinding = require('@roblox-integrations/roblox-install-win32-arm64-msvc')
+            nativeBinding = require('@freeway-rbx/roblox-install-win32-arm64-msvc')
           }
         } catch (e) {
           loadError = e
@@ -113,7 +107,7 @@ switch (platform) {
       if (localFileExisted) {
         nativeBinding = require('./roblox-install.darwin-universal.node')
       } else {
-        nativeBinding = require('@roblox-integrations/roblox-install-darwin-universal')
+        nativeBinding = require('@freeway-rbx/roblox-install-darwin-universal')
       }
       break
     } catch {}
@@ -124,21 +118,19 @@ switch (platform) {
           if (localFileExisted) {
             nativeBinding = require('./roblox-install.darwin-x64.node')
           } else {
-            nativeBinding = require('@roblox-integrations/roblox-install-darwin-x64')
+            nativeBinding = require('@freeway-rbx/roblox-install-darwin-x64')
           }
         } catch (e) {
           loadError = e
         }
         break
       case 'arm64':
-        localFileExisted = existsSync(
-          join(__dirname, 'roblox-install.darwin-arm64.node')
-        )
+        localFileExisted = existsSync(join(__dirname, 'roblox-install.darwin-arm64.node'))
         try {
           if (localFileExisted) {
             nativeBinding = require('./roblox-install.darwin-arm64.node')
           } else {
-            nativeBinding = require('@roblox-integrations/roblox-install-darwin-arm64')
+            nativeBinding = require('@freeway-rbx/roblox-install-darwin-arm64')
           }
         } catch (e) {
           loadError = e
@@ -157,7 +149,7 @@ switch (platform) {
       if (localFileExisted) {
         nativeBinding = require('./roblox-install.freebsd-x64.node')
       } else {
-        nativeBinding = require('@roblox-integrations/roblox-install-freebsd-x64')
+        nativeBinding = require('@freeway-rbx/roblox-install-freebsd-x64')
       }
     } catch (e) {
       loadError = e
@@ -167,27 +159,23 @@ switch (platform) {
     switch (arch) {
       case 'x64':
         if (isMusl()) {
-          localFileExisted = existsSync(
-            join(__dirname, 'roblox-install.linux-x64-musl.node')
-          )
+          localFileExisted = existsSync(join(__dirname, 'roblox-install.linux-x64-musl.node'))
           try {
             if (localFileExisted) {
               nativeBinding = require('./roblox-install.linux-x64-musl.node')
             } else {
-              nativeBinding = require('@roblox-integrations/roblox-install-linux-x64-musl')
+              nativeBinding = require('@freeway-rbx/roblox-install-linux-x64-musl')
             }
           } catch (e) {
             loadError = e
           }
         } else {
-          localFileExisted = existsSync(
-            join(__dirname, 'roblox-install.linux-x64-gnu.node')
-          )
+          localFileExisted = existsSync(join(__dirname, 'roblox-install.linux-x64-gnu.node'))
           try {
             if (localFileExisted) {
               nativeBinding = require('./roblox-install.linux-x64-gnu.node')
             } else {
-              nativeBinding = require('@roblox-integrations/roblox-install-linux-x64-gnu')
+              nativeBinding = require('@freeway-rbx/roblox-install-linux-x64-gnu')
             }
           } catch (e) {
             loadError = e
@@ -196,27 +184,23 @@ switch (platform) {
         break
       case 'arm64':
         if (isMusl()) {
-          localFileExisted = existsSync(
-            join(__dirname, 'roblox-install.linux-arm64-musl.node')
-          )
+          localFileExisted = existsSync(join(__dirname, 'roblox-install.linux-arm64-musl.node'))
           try {
             if (localFileExisted) {
               nativeBinding = require('./roblox-install.linux-arm64-musl.node')
             } else {
-              nativeBinding = require('@roblox-integrations/roblox-install-linux-arm64-musl')
+              nativeBinding = require('@freeway-rbx/roblox-install-linux-arm64-musl')
             }
           } catch (e) {
             loadError = e
           }
         } else {
-          localFileExisted = existsSync(
-            join(__dirname, 'roblox-install.linux-arm64-gnu.node')
-          )
+          localFileExisted = existsSync(join(__dirname, 'roblox-install.linux-arm64-gnu.node'))
           try {
             if (localFileExisted) {
               nativeBinding = require('./roblox-install.linux-arm64-gnu.node')
             } else {
-              nativeBinding = require('@roblox-integrations/roblox-install-linux-arm64-gnu')
+              nativeBinding = require('@freeway-rbx/roblox-install-linux-arm64-gnu')
             }
           } catch (e) {
             loadError = e
@@ -225,27 +209,23 @@ switch (platform) {
         break
       case 'arm':
         if (isMusl()) {
-          localFileExisted = existsSync(
-            join(__dirname, 'roblox-install.linux-arm-musleabihf.node')
-          )
+          localFileExisted = existsSync(join(__dirname, 'roblox-install.linux-arm-musleabihf.node'))
           try {
             if (localFileExisted) {
               nativeBinding = require('./roblox-install.linux-arm-musleabihf.node')
             } else {
-              nativeBinding = require('@roblox-integrations/roblox-install-linux-arm-musleabihf')
+              nativeBinding = require('@freeway-rbx/roblox-install-linux-arm-musleabihf')
             }
           } catch (e) {
             loadError = e
           }
         } else {
-          localFileExisted = existsSync(
-            join(__dirname, 'roblox-install.linux-arm-gnueabihf.node')
-          )
+          localFileExisted = existsSync(join(__dirname, 'roblox-install.linux-arm-gnueabihf.node'))
           try {
             if (localFileExisted) {
               nativeBinding = require('./roblox-install.linux-arm-gnueabihf.node')
             } else {
-              nativeBinding = require('@roblox-integrations/roblox-install-linux-arm-gnueabihf')
+              nativeBinding = require('@freeway-rbx/roblox-install-linux-arm-gnueabihf')
             }
           } catch (e) {
             loadError = e
@@ -254,27 +234,23 @@ switch (platform) {
         break
       case 'riscv64':
         if (isMusl()) {
-          localFileExisted = existsSync(
-            join(__dirname, 'roblox-install.linux-riscv64-musl.node')
-          )
+          localFileExisted = existsSync(join(__dirname, 'roblox-install.linux-riscv64-musl.node'))
           try {
             if (localFileExisted) {
               nativeBinding = require('./roblox-install.linux-riscv64-musl.node')
             } else {
-              nativeBinding = require('@roblox-integrations/roblox-install-linux-riscv64-musl')
+              nativeBinding = require('@freeway-rbx/roblox-install-linux-riscv64-musl')
             }
           } catch (e) {
             loadError = e
           }
         } else {
-          localFileExisted = existsSync(
-            join(__dirname, 'roblox-install.linux-riscv64-gnu.node')
-          )
+          localFileExisted = existsSync(join(__dirname, 'roblox-install.linux-riscv64-gnu.node'))
           try {
             if (localFileExisted) {
               nativeBinding = require('./roblox-install.linux-riscv64-gnu.node')
             } else {
-              nativeBinding = require('@roblox-integrations/roblox-install-linux-riscv64-gnu')
+              nativeBinding = require('@freeway-rbx/roblox-install-linux-riscv64-gnu')
             }
           } catch (e) {
             loadError = e
@@ -282,14 +258,12 @@ switch (platform) {
         }
         break
       case 's390x':
-        localFileExisted = existsSync(
-          join(__dirname, 'roblox-install.linux-s390x-gnu.node')
-        )
+        localFileExisted = existsSync(join(__dirname, 'roblox-install.linux-s390x-gnu.node'))
         try {
           if (localFileExisted) {
             nativeBinding = require('./roblox-install.linux-s390x-gnu.node')
           } else {
-            nativeBinding = require('@roblox-integrations/roblox-install-linux-s390x-gnu')
+            nativeBinding = require('@freeway-rbx/roblox-install-linux-s390x-gnu')
           }
         } catch (e) {
           loadError = e
