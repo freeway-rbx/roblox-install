@@ -1,5 +1,5 @@
 {
-  "name": "@roblox-integrations/roblox-install",
+  "name": "@freeway-rbx/roblox-install",
   "version": "0.0.14",
   "description": "Get Roblox Studio install directory. A nodejs wrapper for https://github.com/Kampfkarren/roblox-install",
   "main": "index.js",
