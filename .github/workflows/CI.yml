@@ -414,6 +414,10 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           path: artifacts
+      - name: Print artifact folders
+        run: |
+          ls -la /home/runner/work/roblox-install/roblox-install/npm/
+          ls -la /home/runner/work/roblox-install/roblox-install/npm/darwin-arm64/
       - name: Move artifacts
         run: yarn artifacts
       - name: List packages
